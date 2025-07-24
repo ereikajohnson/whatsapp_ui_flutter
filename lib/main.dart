@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui_flutter/calls.dart';
 import 'package:whatsapp_ui_flutter/home.dart';
 import 'package:whatsapp_ui_flutter/splash.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(debugShowCheckedModeBanner: false,
    
-      home: Home()
+      home: Splash()
     );
   }
 }
