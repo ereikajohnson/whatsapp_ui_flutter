@@ -22,7 +22,10 @@ class Calls extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Text("Favorites", style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+            child: Text(
+              "Favorites",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
           ),
           ListTile(
             title: Text("Add favorites"),
@@ -33,11 +36,20 @@ class Calls extends StatelessWidget {
                 color: const Color.fromARGB(255, 8, 8, 8),
               ),
             ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text("Recent",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
           ),
-        ],
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              "Recent",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),ListTile(trailing: Icon(Icons.videocam),
+            subtitle: Row(children: [Icon(Icons.call_made,color: const Color.fromARGB(255, 27, 117, 30),),Text("july 22,7:40 PM")],),
+            title: Text("mom"),
+            leading: CircleAvatar(
+              backgroundImage: AssetImage("assets/avatar.jpeg"),
+            ),
+      )],
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: const Color.fromARGB(255, 34, 97, 36),
@@ -45,7 +57,6 @@ class Calls extends StatelessWidget {
         onPressed: () {},
         child: Icon(Icons.add_call),
       ),
-      
     );
   }
 }
