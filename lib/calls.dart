@@ -43,7 +43,7 @@ class Calls extends StatelessWidget {
               "Recent",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-          ),ListTile(trailing: Icon(Icons.videocam),
+          ),ListTile(trailing: Icon(Icons.call),
             subtitle: Row(children: [Icon(Icons.call_made,color: const Color.fromARGB(255, 27, 117, 30),),Text("july 22,7:40 PM")],),
             title: Text("mom"),
             leading: CircleAvatar(
